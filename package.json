@@ -9,6 +9,10 @@
   "author": "Wemerson",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "consign": "^0.1.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.4"
   }
 }
