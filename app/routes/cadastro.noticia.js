@@ -1,6 +1,12 @@
 module.exports = function(server){
-    server.get('/cadastro/noticia',function(req, res){
+    
+    server.get('/noticia/formulario/cadastro',function(req, res){
         console.log("Acessando cadastro de notícia...");
-        res.render('admin/form_add_noticia.ejs')
+       server.app.controllers.admin.cadastro_noticia(server,req,res);
     });
+
+    server.post('/noticia/salvar',function(req, res){
+        server.app.controllers.admin.salvar_noticia(server,req,res);
+    });
+    
 } 
